@@ -15,9 +15,9 @@ var tie = 0
 for(var i= 0; i < choices.length; i++) {
   choices[i].addEventListener("click", function() {
     userChoice = this.id;
-    document.getElementById("output").innerHTML =
-    "You chose" + " " + userChoice + ".";
-    startGame();
+      document.getElementById("output").innerHTML =
+      "You chose" + " " + userChoice + ".";
+        startGame();
     });
   };
 
@@ -32,34 +32,34 @@ function printCompChoice() {
 // find and print winner
 
     // lose
-    function startGame() {
-  if (userChoice == "Rock" && compChoice == "Paper" || 
-  userChoice == "Scissors" && compChoice == "Rock" ||
-  userChoice == "Paper" && compChoice =="Scissors") {
-    printCompChoice();
-      document.getElementById("output3").innerHTML =
-      "You lost. :(";
+  function startGame() {
+    if (userChoice == "Rock" && compChoice == "Paper" || 
+      userChoice == "Scissors" && compChoice == "Rock" ||
+      userChoice == "Paper" && compChoice =="Scissors") {
+        printCompChoice();
+          document.getElementById("output3").innerHTML =
+          "You lost. :(";
   } else if 
 
     // tie
-  (userChoice == "Rock" && compChoice == "Rock" ||
-  userChoice == "Paper" && compChoice == "Paper" ||
-  userChoice == "Scissors" && compChoice == "Scissors") {
-    printCompChoice();
-      document.getElementById("output3").innerHTML =
-      "You tied!";
+    (userChoice == "Rock" && compChoice == "Rock" ||
+    userChoice == "Paper" && compChoice == "Paper" ||
+    userChoice == "Scissors" && compChoice == "Scissors") {
+      printCompChoice();
+        document.getElementById("output3").innerHTML =
+        "You tied!";
   } else if 
   
     // lose
-  (userChoice == "Rock" && compChoice == "Scissors" ||
-  userChoice == "Scissors" && compChoice == "Paper" || 
-  userChoice == "Paper" && compChoice == "Rock") {
-    printCompChoice();
-      document.getElementById("output3").innerHTML =
-      "Congratulations! You won!";
+    (userChoice == "Rock" && compChoice == "Scissors" ||
+    userChoice == "Scissors" && compChoice == "Paper" || 
+    userChoice == "Paper" && compChoice == "Rock") {
+      printCompChoice();
+        document.getElementById("output3").innerHTML =
+        "Congratulations! You won!";
   }
   else {
     document.getElementById("output3").innerHTML =
       "Computing error - please try again!";
   };
-    };
+};

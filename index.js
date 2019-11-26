@@ -1,7 +1,3 @@
-// TODO
-// display computer choice
-// display winner
-
 // variables
 
 var choices = document.getElementsByClassName("choices");
@@ -25,15 +21,15 @@ for(var i= 0; i < choices.length; i++) {
     });
   };
 
+// print computer choice
 
-  // print computer choice
 function printCompChoice() {
   document.getElementById("output2").innerHTML =
   "The computer chose" + " " + compChoice + ".";
 };
 
 
-// find winner and do everything else with this SOGGY CODE
+// find and print winner
 
     // lose
     function startGame() {
@@ -67,18 +63,3 @@ function printCompChoice() {
       "Computing error - please try again!";
   };
     };
-
-// BONUS
-// keep track of score (wins, losses + ties)
-// track PERCENTAGE of score
-//be able to start new game w/o refreshing
-// color wins and losses differently
-
-
-//   // refresh game
-// // var btn = document.getElementById('btn);
-// // btn.addEventListener("click", newGame);
-
-// // function newGame() {
-  
-//   // write logic for resetting scores

@@ -50,7 +50,7 @@ function printCompChoice() {
         "You tied!";
   } else if 
   
-    // lose
+    // win
     (userChoice == "Rock" && compChoice == "Scissors" ||
     userChoice == "Scissors" && compChoice == "Paper" || 
     userChoice == "Paper" && compChoice == "Rock") {

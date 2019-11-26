@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+
+.choices {
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
+  padding: 25px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 16px;
+}

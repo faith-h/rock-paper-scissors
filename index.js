@@ -3,11 +3,10 @@
 var choices = document.getElementsByClassName("choices");
 var userChoice = "";
 var compChoices = ["Rock", "Paper", "Scissors"]
-var compChoice = compChoices[Math.floor(Math.random()*compChoices.length)];
+var compChoice = ''
 var win = 0;
 var tie = 0;
 var lose = 0;
-
 
 //find + print user choice
 
@@ -16,6 +15,7 @@ for(var i= 0; i < choices.length; i++) {
     userChoice = this.id;
       document.getElementById("output").innerHTML =
       "You chose" + " " + userChoice + ".";
+        compChoice = compChoices[Math.floor(Math.random()*compChoices.length)];
         startGame();
     });
   };
@@ -25,7 +25,7 @@ for(var i= 0; i < choices.length; i++) {
 for(var i= 0; i < choices.length; i++) {
   choices[i].addEventListener("click", function() {
   document.getElementById("output2").innerHTML =
-  "The computer chose" + " " + compChoices[Math.floor(Math.random()*compChoices.length)] + ".";
+  "The computer chose" + " " + compChoice + "."
   });
 };
 
